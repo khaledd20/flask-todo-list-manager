@@ -1,0 +1,131 @@
+3. Testing User Registration
+Endpoint: POST /register
+
+URL: http://127.0.0.1:5000/register
+
+Method: POST
+
+Body:
+
+Select raw and JSON format.
+Example JSON:
+json
+Copy code
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+Send Request:
+Click the "Send" button and check the response.
+
+4. Testing User Login
+Endpoint: POST /login
+
+URL: http://127.0.0.1:5000/login
+
+Method: POST
+
+Body:
+
+Select raw and JSON format.
+Example JSON:
+json
+Copy code
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+Send Request:
+Click the "Send" button and check the response.
+
+5. Testing Task Creation
+Endpoint: POST /tasks
+
+URL: http://127.0.0.1:5000/tasks
+
+Method: POST
+
+Body:
+
+Select raw and JSON format.
+Example JSON:
+json
+Copy code
+{
+  "name": "Buy groceries",
+  "category": "Personal",
+  "priority": "High"
+}
+Send Request:
+Click the "Send" button and check the response.
+
+6. Testing Get All Tasks
+Endpoint: GET /tasks
+
+URL: http://127.0.0.1:5000/tasks
+
+Method: GET
+
+Send Request:
+Click the "Send" button and check the response.
+
+7. Testing Update Task
+Endpoint: PUT /tasks/<task_id>
+
+URL: http://127.0.0.1:5000/tasks/1 (replace 1 with the actual task ID you want to update)
+
+Method: PUT
+
+Body:
+
+Select raw and JSON format.
+Example JSON:
+json
+Copy code
+{
+  "name": "Buy groceries and cook dinner",
+  "category": "Personal",
+  "priority": "High"
+}
+Send Request:
+Click the "Send" button and check the response.
+
+8. Testing Delete Task
+Endpoint: DELETE /tasks/<task_id>
+
+URL: http://127.0.0.1:5000/tasks/1 (replace 1 with the actual task ID you want to delete)
+
+Method: DELETE
+
+Send Request:
+Click the "Send" button and check the response.
+
+9. Testing Search Tasks
+Endpoint: GET /tasks/search?q=<query>
+
+URL: http://127.0.0.1:5000/tasks/search?q=groceries
+
+Method: GET
+
+Send Request:
+Click the "Send" button and check the response.
+
+10. Testing Get Tasks by Category
+Endpoint: GET /tasks/category/<category>
+
+URL: http://127.0.0.1:5000/tasks/category/Personal
+
+Method: GET
+
+Send Request:
+Click the "Send" button and check the response.
+
+11. Testing Get Tasks by Priority
+Endpoint: GET /tasks/priority/<priority>
+
+URL: http://127.0.0.1:5000/tasks/priority/High
+
+Method: GET
+
+Send Request:
+Click the "Send" button and check the response.
