@@ -101,6 +101,4 @@ A simple To-Do List Manager application built with Flask, featuring user registr
 - **Get tasks by priority**
     - `GET /tasks/priority/<priority>`
 
-## License
 
-This project is licensed under the MIT License.
